@@ -1,0 +1,4 @@
+
+# Last Logon Date of AD user
+
+Get-ADUser -Filter * -Properties * | Sort-Object LastlogonDate | Format-Table Name, LastLogonDate
